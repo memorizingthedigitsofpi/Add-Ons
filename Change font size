@@ -1,0 +1,16 @@
+/*Change the font size for fics. 
+
+This code will change the size of the font inside a work on AO3 but leave the rest of the site as is. 
+If you want to change the font size for the entire site, you will need different code. 
+
+The number in this code is the percentage of the usual font size for the page. 
+You can adjust that number to whatever font size is comfortable to you. 
+
+Numbers larger than 100% will be bigger than the standard size.
+Numbers smaller than 100% will be smaller.
+*/
+
+#workskin, .blurb, .comment {
+font-size: 130%;
+}
+
