@@ -1,0 +1,72 @@
+/* CHANGE THE COLOUR AND STYLE OF AO3 TAGS
+
+Change the colour of the tag text or the background behind the tag text.
+Change the tag text to bold or italics. 
+All of this code can be used either separately or together. 
+Comments describe each section. 
+*/
+
+/* This section of code changes the colour of the Warning tags to red. 
+It also removes the bold.  
+You can set any colour you like by changing the hex code. 
+The hex code here is #cc0a31. 
+
+Make sure you include a # at the start of the hex code. 
+Make sure you have a ; at the end of the line. 
+If you want to keep the Warnings bolded, remove the line   font-style: normal; 
+*/
+
+.warnings .tag,
+.work .warning a.tag,
+dt.warning.tags a,
+dd.warning.tags a {
+  color: #cc0a31;
+font-weight: normal;
+}
+
+ 
+
+/* This section of code removes the background that the Default site skin applies behind Relationship tags. 
+It also changes the tag colour to purple. 
+If you want to keep a background colour behind the tags but you want to choose your own colour, you can replace the word none with a hex code.  
+If you want the relationships to be bolded, you can add in the line      font-style: bold;  
+If you want them to be italicized, you can add the line      font-style: italic; 
+*/
+
+li.relationships a,
+.relationships .tag,
+.work .relationships a.tag,
+dt.relationship.tags,
+dd.relationship.tags a {
+  background: none;
+  color: #bf0acc;
+}
+
+ 
+
+/* This section of code changes the colour of Character tags to blue. */
+
+.characters .tag,
+.work .characters a.tag,
+dt.character.tags,
+dd.character.tags a {
+  color: #0a6bcc;
+}
+
+ 
+
+/* This section of code changes the colour of Additional tags to a golden yellow/orange */
+
+.freeforms .tag,
+.work .freeforms a.tag,
+dt.freeform.tags,
+dd.freeform.tags a {
+  color: #cc920a;
+}
+
+ 
+
+ /* One other fun stylistic change I like to make sometimes is changing the font to all-caps 
+(with the first letter being larger than the rest). 
+If that's a look that appeals to you, you can add in the line       font-variant: small-caps;  
+*/
