@@ -1,0 +1,61 @@
+/* CSS code that adds text in front of each tag type (Warnings, Relationships, Chararacters, Additional Tags). 
+This only affects the tags when you're scrolling through a list of works (on an author's page, in a search etc) 
+and not the labels at the top of a fic that you've opened.
+
+You can change the text, colours, and emojis to anything you wish. 
+(you can also not use emoji at all)
+*/
+
+
+
+
+ul.tags li.warnings:first-child:before {
+  content: "🛑 STOP! 🚔: ";
+  color: #035afc;
+  font-weight: bold;
+}
+
+
+
+li.warnings + li.relationships:before {
+  content: "Idiots (affectionate) 💕: ";
+  color: #fc0373;
+  font-weight: bold;
+}
+
+
+li.relationships + li.characters:before {
+  content: "My children 👩: ";
+  color: #8803fc;
+  font-weight: bold;
+}
+
+
+li.characters + li.freeforms:before {
+  content: "Kink shame me, baby 💦: ";
+  color: #05963f;
+  font-weight: bold;
+}
+
+li.warnings + li.characters:before {
+  content: "My children 👩: ";
+  color: #8803fc;
+  font-weight: bold;
+}
+
+li.warnings + li.freeforms:before {
+  content: "Kink shame me, baby 💦: ";
+  color: #05963f;
+  font-weight: bold;
+}
+
+li.relationships + li.freeforms:before {
+  content: "Kink shame me, baby 💦: ";
+  color: #05963f;
+  font-weight: bold;
+}
+
+li.relationships a,
+.work .relationship a.tag {
+  background: none;
+}
