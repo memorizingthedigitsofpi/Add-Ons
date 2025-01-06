@@ -1,0 +1,11 @@
+/* FORCE A BLANK LINE BETWEEN PARAGRAPHS 
+
+This will add a blank line in between every paragraph inside a fic. 
+Depending on how the author formatted their story originally, this should only affect stories that have no blank lines between paragraphs.
+
+It is possible that it will add 2 blank lines between paragraphs in cases where the author used different HTML than is typical.
+*/
+
+#workskin p {
+white-space: pre-line;
+}
