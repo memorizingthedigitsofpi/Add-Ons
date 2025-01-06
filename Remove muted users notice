@@ -1,0 +1,7 @@
+/* When you mute a user on AO3, AO3 adds a notice to the top of the page telling you
+that you've done that. This hides that notice. 
+*/
+
+p.muted.notice {
+  display: none;
+}
