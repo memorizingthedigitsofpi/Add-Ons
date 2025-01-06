@@ -1,0 +1,11 @@
+/* FORCE TEXT IN FICS TO ALIGN TO THE LEFT HAND SIDE
+
+This will force all text inside a fic to start on the left hand side of your screen. 
+Nothing will be centered or right-aligned (unless the author uses the space bar or tab key to set their spacing)
+
+You can modify this code to set everything to center or to right if you'd prefer. Just change the word 'left' in the code. 
+*/
+
+#workskin p {
+text-align: left;
+}
