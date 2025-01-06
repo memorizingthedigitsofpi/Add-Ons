@@ -1,0 +1,10 @@
+/* REMOVE IMAGES FROM WORKS 
+
+This will remove all images from inside all works on AO3. 
+This means you will be unable to see fanart posted inside a work. 
+You will also not be able to see image descriptions in their place.
+*/
+
+#workskin img {
+display: none;
+}
