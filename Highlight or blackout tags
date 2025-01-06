@@ -1,0 +1,21 @@
+/* CHANGE THE BACKGROUND COLOUR OF A TAG BASED ON THE TEXT OF THE TAG
+
+Use this code to either "black out" or highlight tags to make them easier to see or avoid. 
+This code doesn't look at the meaning of a tag and it doesn't connect to synonyms. 
+It is based entirely on the text string that you enter. 
+
+Be aware, if you are copy/pasting this code on a mobile device, your device may change the quotation marks. 
+The quotes should look straight up and down. 
+If they have a slight curl to them, the code will not work. 
+If your code isn't working, try deleting the quotes and replacing them. 
+
+Change the text inside of the quotation marks to whatever tag you want to highlight or black out. 
+
+You can set the background to one colour and the text to another colour that's easy to read on that background. 
+You can use a tool like a hex colour picker to help you find shades that you like. 
+*/
+
+li.blurb a.tag[href*="angst" i] {
+background-color: #000;
+color: #5e5757;
+}
