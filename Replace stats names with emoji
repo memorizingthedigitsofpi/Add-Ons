@@ -1,0 +1,39 @@
+/* Removes the words for stats, such as Words and Hits and Kudos, and changes them to emojis */
+
+
+
+dl.stats dt {
+display: none;
+}
+
+.skins .header dl.stats dt {
+display: inline-block;
+}
+
+dl.stats dd.words::before {
+content: "✍️";
+}
+
+dl.stats dd.chapters::before {
+content: "📄";
+}
+
+dl.stats dd.collections::before {
+content: "🗂️";
+}
+
+dl.stats dd.comments::before {
+content: "💬";
+}
+
+dl.stats dd.kudos::before {
+content: "❤️";
+}
+
+dl.stats dd.bookmarks::before {
+content: "🔖";
+}
+
+dl.stats dd.hits::before {
+content: "👀";
+}
