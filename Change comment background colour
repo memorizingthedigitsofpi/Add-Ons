@@ -1,0 +1,15 @@
+/* CHANGE THE BACKGROUND COLOUR OF EVEN-NUMBERED COMMENTS
+
+AO3 puts a slight shading on every-other comment in a thread.
+This can sometimes look like reader comments have one background and author comments have a different background, but it's based on position in the list, not on who is leaving the comment. 
+
+In this code, you can change just the border colour or just the background colour or both. 
+If you only want to change one, delete the other one from the code. You can use a tool like a hex colour picker to help you find a shade that you like. 
+*/
+
+.thread .even {
+border-color: #9edcff;
+background: #fcd979;
+}
+
+
