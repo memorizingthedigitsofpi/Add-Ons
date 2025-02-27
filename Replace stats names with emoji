@@ -37,3 +37,12 @@ content: "🔖";
 dl.stats dd.hits::before {
 content: "👀";
 }
+
+/* This part is specifically related to the Series page */
+.meta .stats dl dd:nth-of-type(2)::before {
+  content: " 📙";
+}
+
+.meta .stats dl dd:nth-of-type(3)::before {
+  content: " ✅";
+}
