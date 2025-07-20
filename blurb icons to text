@@ -29,7 +29,7 @@ span.complete-no {
 }
 
 
-/* Those boxes also contain text, but the text size is 0 and the line height is 0, so I made the text and line the right size again. */
+/* Those boxes also contain text, but the text size is 0 and the line height is 0, so I made the text and line the right size again. You can adjust these numbers to make the text larger or smaller, but doing so will probably require more adjusting below. */
 .blurb span.text {
   line-height: 1.5em;
   font-size: 100%;
