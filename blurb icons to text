@@ -1,0 +1,134 @@
+/* This moves the space where the icons go down below the fic title and fandom instead of where it used to be on the left */
+.blurb .header ul.required-tags {
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 1em;
+  position: unset;
+  width: auto;
+  margin-block: 0.375em;
+}
+
+
+/* This moves the fic title and the fandom over to the left where the icons used to be */
+.blurb:not(.picture.blurb,
+.mystery.blurb) .header .heading {
+  margin-left: 0;
+}
+
+
+/* Fun fact! Those icons are just background images inside boxes. This removes those backgrounds */
+span.rating,
+span.category,
+span.warning-yes,
+span.warning-no,
+span.warning-choosenotto,
+span.complete-yes,
+span.complete-no {
+  background-image: none !important;
+  width: 100%;
+}
+
+
+/* Those boxes also contain text, but the text size is 0 and the line height is 0, so I made the text and line the right size again. */
+.blurb span.text {
+  line-height: 1.5em;
+  font-size: 100%;
+}
+
+
+/* This makes sure the text doesn't wrap down onto the line below. If you're using a narrow screen, you might want to change this from nowrap to wrap. If you do that, you might need to change more things below */
+.blurb .header ul.required-tags li {
+  position: unset;
+  text-wrap: nowrap;
+  padding-right: 2em;
+}
+
+/* This puts the word Rating in front of the fic's rating. You can change that word to anything else. You can put an emoji there. You can also delete this section if you don't want it to say anything */
+.blurb .header ul.required-tags li span.text::before {
+  content: "Rating: ";
+  color: #2a2a2a;
+  font-weight: normal;
+}
+
+
+/* Up above, I made the text and line the right size. This is what makes the text a visible colour. You can change the colour to anything you want using a hex code. This hex code is #1e81b0. The # is necessary */
+.blurb .header ul.required-tags li span.text {
+  color: #1e81b0;
+  font-weight: normal;
+}
+
+
+/* This is where I start moving things around. You can adjust how high/low the warnings are by changing the number next to top. You can change how far left/right it is by changing the number next to left. */
+.blurb .header ul.required-tags li + li {
+  position: relative;
+  top: 1.2em;
+  left: -4.5em;
+}
+
+/* I didn't label the warnings but if you want, you can put text or an emoji inside of those quotation marks */
+.blurb .header ul.required-tags li + li span.text::before {
+  content: " ";
+}
+
+/* This sets the colour I used for the Archive Warnings. It also sets the font to bold. If you want it to be a normal weight, just delete that line */
+.blurb .header ul.required-tags li + li span.text {
+  color: #ce2d44;
+  font-weight: bold;
+}
+
+/* This moves the category down and to the left. Adjust the top number to move it up and down. Adjust the left number to move it right or left. */
+.blurb .header ul.required-tags li + li + li {
+  position: relative;
+  top: 2.4em;
+  left: -8.9em;
+}
+
+
+/* This puts the word Category in front of the categories. You can change that text to a different word or to an emoji. You can also delete this chunk of code */
+.blurb .header ul.required-tags li + li + li span.text::before {
+  content: "Category: ";
+  color: #2a2a2a;
+  font-weight: normal;
+}
+
+
+
+/* This sets the colour of the Categories. You can change the colour by changing the hex code. If you want the text to be bold, change the font-weight to bold. */
+.blurb .header ul.required-tags li + li + li span.text {
+  color: #1f9857;
+  font-weight: normal;
+}
+
+
+/* This moves the fic status down and to the left. You can move it up and down by adjusting the top number. You can move it left or right by adjusting the left number. */
+.blurb .header ul.required-tags li + li + li +li {
+  position: relative;
+  top: 3.6em;
+  left: -13.2em;
+}
+
+
+/* This puts the word Status next to the fic's status. You can change this to a different word or an emoji if you'd like. You can also delete this section of code to remove the word entirely. */
+.blurb .header ul.required-tags li + li + li +li span.text::before {
+  content: "Status: ";
+  color: #2a2a2a;
+  font-weight: normal;
+}
+
+
+/* This sets the colour of the text for the fic's status. You can change this colour by changing the hex code. */ 
+.blurb .header ul.required-tags li + li + li +li span.text {
+  color: #8e1eb0;
+  font-weight: normal;
+}
+
+
+/* Since the Archive Warnings are spelled out already, I removed them from the tag group. If you want to put them back, remove this chunk of code */
+li.warnings {
+  display: none !important;
+}
+
+/* This shifts the fic's tags down far enough that there's space for all of the rest of this stuff. You can adjust it up or down by adjusting the number here. */
+ul.tags.commas {
+  margin-top: 4em;
+}
