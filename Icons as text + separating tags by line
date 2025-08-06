@@ -1,0 +1,139 @@
+li.blurb ul.required-tags li span {
+  background: none;
+}
+
+li.blurb span.text {
+  color: initial;
+  font-size: inherit;
+}
+
+li.blurb ul.required-tags li,
+li.blurb ul.required-tags li a,
+li.blurb ul.required-tags li span {
+  display: contents;
+  width: initial;
+  height: initial;
+  margin-top: initial;
+  margin-bottom: initial;
+  padding-left: initial;
+}
+
+li.blurb .header .heading,
+li.blurb .header ul {
+  margin: 0.375em 0 0 0;
+}
+
+li.blurb ul.required-tags {
+  position: initial;
+  width: initial;
+}
+
+ul.required-tags li span.warning-choosenotto.warnings,
+ul.required-tags li span.warning-yes.warnings,
+ul.required-tags li span.warning-no.warnings {
+  display: none;
+}
+
+ul.required-tags li span.rating-general-audience.rating::after,
+ul.required-tags li span.rating-mature.rating::after,
+ul.required-tags li span.rating-notrated.rating::after,
+ul.required-tags li span.rating-teen.rating::after,
+ul.required-tags li span.rating-explicit.rating::after,
+ul.required-tags li span.complete-yes.iswip::before,
+ul.required-tags li span.complete-no.iswip::before {
+  content: " ◆ ";
+}
+
+li.blurb .header.module {
+  padding-bottom: 1em;
+}
+
+li.blurb blockquote.userstuff.summary {
+  padding-top: 1em;
+}
+
+ul.tags li.warnings,
+ul.tags li.relationships,
+ul.tags li.characters,
+ul.tags li.freeforms {
+  float: left !important;
+}
+
+li.warnings + li.relationships,
+li.relationships + li.characters,
+li.characters + li.freeforms,
+li.warnings + li.characters,
+li.warnings + li.freeforms,
+li.relationships + li.freeforms {
+  clear: left;
+}
+
+ul.tags li {
+  margin: 0;
+}
+
+ul.tags li a.tag {
+  line-height: 1.5;
+}
+
+.commas li:after {
+  content: "  •  ";
+}
+
+ul.tags li.warnings:first-child:before {
+  content: "Archive Warnings: ";
+  color: #111;
+  font-weight: bold;
+}
+
+li.warnings + li.relationships:before {
+  content: "Relationships: ";
+  color: #111;
+  font-weight: bold;
+}
+
+li.relationships + li.characters:before {
+  content: "Characters: ";
+  color: #111;
+  font-weight: bold;
+}
+
+li.characters + li.freeforms:before {
+  content: "Additional Tags: ";
+  color: #111;
+  font-weight: bold;
+}
+
+li.warnings + li.characters:before {
+  content: "Characters: ";
+  color: #111;
+  font-weight: bold;
+}
+
+li.warnings + li.freeforms:before {
+  content: "Additional Tags: ";
+  color: #111;
+  font-weight: bold;
+}
+
+li.relationships + li.freeforms:before {
+  content: "Additional Tags: ";
+  color: #111;
+  font-weight: bold;
+}
+
+li.blurb ul.tags a {
+  border-bottom: none;
+}
+
+li.blurb ul.tags li.relationships a {
+  background: none;
+}
+
+li.blurb ul.tags li.warnings a {
+  font-weight: normal;
+}
+
+.index .skins .icon {
+  display: none;
+}
