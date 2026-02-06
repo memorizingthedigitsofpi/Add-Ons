@@ -1,0 +1,8 @@
+/* use this code to remove the grey highlight behind ship tags */
+
+li.relationships a {
+  background: none;
+}
+
+
+/* if you want to give the tags a different background colour, change the word none to a hex colour code */
